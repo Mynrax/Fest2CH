@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="/logo.png" alt="Fest2CH" width="140" />
+  <img src="/festlogo.png" alt="Fest2CH" width="140" />
 
   <br />
   <br />
