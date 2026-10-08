@@ -228,17 +228,17 @@ def decrypt_dat_to_mid(dat_path: Path) -> Path:
     return mid_path
 
 # song.ini generation
-# I believe I may have cocked up the difficulty mapping, so please do change the mapping values, someone who knows this shit better than me LOL
+# Edited the difficulty mapping here to match the correct instrument.
 def write_song_ini(song_dir: Path, title: str, artist: str, year: str, diffs: Dict[str, Any]) -> None:
     """
     Writes song.ini with Year and Difficulties.
     Mappings (I think?):
-      bd -> Guitar
+      pg -> Guitar
       pb -> Bass
       pd -> Drums
       vl -> Vocals
     """
-    d_guitar = diffs.get("bd", -1)
+    d_guitar = diffs.get("pg", -1)
     d_bass   = diffs.get("pb", -1)
     d_drums  = diffs.get("pd", -1)
     d_vocals = diffs.get("vl", -1)
