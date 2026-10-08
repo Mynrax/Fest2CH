@@ -228,7 +228,7 @@ def decrypt_dat_to_mid(dat_path: Path) -> Path:
     return mid_path
 
 # song.ini generation
-# Edited the difficulty mapping here to match the correct instrument.
+# Edited the difficulty mapping here to match the correct instrument. Thanks to gtkirk for the help here!
 def write_song_ini(song_dir: Path, title: str, artist: str, year: str, diffs: Dict[str, Any]) -> None:
     """
     Writes song.ini with Year and Difficulties.
